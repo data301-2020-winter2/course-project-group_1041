@@ -12,7 +12,7 @@ The data set we chose is about medical insurance cost across each region of the 
 
 ## Describe your dataset in about 150-200 words
 
-{Add your stuff here}
+Medical Cost Personal dataset is publicly available. It is used in Brett Lanz’ book, called Machine Learning with R. This dataset is obtained from GitHub. The Medical Cost Personal dataset contains 7 columns, which are age, sex, body mass index (BMI), children, smoker, region, and charges. According to GitHub, this dataset was created and last updated on February 20, 2018. The purpose of the data set is can people accurately predict medical insurance costs. For the collection part, at the moment where the data was found it does not specify who collected the data or whether or not its historical records or server logs. The real know way that this data was collected was probably through Brett Lanz’s book.     
 
 ## Team Members
 
