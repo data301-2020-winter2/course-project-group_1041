@@ -1,7 +1,5 @@
 [![Work in Repl.it](https://classroom.github.com/assets/work-in-replit-14baed9a392b3a25080506f3b7b6d57f295ec2978f6f33ec97e36a161684cbe9.svg)](https://classroom.github.com/online_ide?assignment_repo_id=358631&assignment_repo_type=GroupAssignmentRepo)
-# Group YYY - {Short snappy Title of your project}
-
-- Your title can change over time.
+# Group 1041 - Medical Costs Analysis
 
 ## Milestones
 
@@ -24,4 +22,11 @@ The data set we chose is about medical insurance cost across each region of the 
 
 ## References
 
-{Add your stuff here}
+Choi, M. (2018, February 20). Medical Cost Personal Datasets, Insurance Forecasts by using Linear Regression. Kaggle. 
+https://www.kaggle.com/mirichoi0218/insurance/home
+   
+Lantz, B.(2013). Machine Learning with R. Packt Publishing Ltd.
+
+meperezcuello. (2019, September 17). Medical Cost Personal Datasets, Medical_cost.csv. Github Gist.
+https://gist.github.com/meperezcuello/82a9f1c1c473d6585e750ad2e3c05a41
+
