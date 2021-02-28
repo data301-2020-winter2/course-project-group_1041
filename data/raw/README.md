@@ -1,1 +1,3 @@
-# This directory will contain raw data
+# Raw Folder
+---
+*This directory will contain the **raw** data*.
