@@ -1,1 +1,3 @@
-# This directory will contain cleaned and processed data
+# Processed Folder
+---
+*This directory will contain the **cleaned and processed** data*.
