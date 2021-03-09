@@ -1,9 +1,15 @@
+'''
+Task #3 for Milestone 2
+
+Created function that loads data into a pd.DataFrame;
+Cleans the data using method chaining;
+Filters data based on optional parameters.
+'''
 import pandas as pd
-import numpy as np
 
 PATH = '../data/raw/Medical_Cost.csv'
 
-def load_data(path=PATH, **optional_params):
+def load_data(path, **optional_params):
     '''
     Loads the medical data, dropping all rows with NA
 
@@ -46,6 +52,7 @@ def load_data(path=PATH, **optional_params):
     df = (
         pd.read_csv(path)
         .dropna(axis=0)
+        .sort_values(['age', 'charges'])
     )
 
     if ('only_smokers' in optional_params and 'no_smokers' in optional_params) or \
