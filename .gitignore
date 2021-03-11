@@ -3,3 +3,6 @@
 
 # Check points
 .ipynb_checkpoints
+
+# Pycache
+*/__pycache__/*
