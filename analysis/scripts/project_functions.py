@@ -39,6 +39,10 @@ def load_data(path, **optional_params):
         Filters out rows where charge is more than specified amount of dollars
     charge_less_than : double, optional
         Filters out rows where charge is less than specified amount of dollars
+    reset_index : bool, optional
+        Changes the index after the filtering when True
+    drop : list[str], optional
+        Drops the listed columns from the DataFrame
     [NOT YET IMPLEMENTED]
     from_region : list[str], optional
         Filters out rows where location is not in list
@@ -99,5 +103,12 @@ def load_data(path, **optional_params):
         df = df[df['bmi'] < optional_params['bmi_less_than']]
     if 'bmi_more_than' in optional_params:
         df = df[df['bmi'] > optional_params['bmi_more_than']]
-
+    # Resets index
+    if 'reset_index' in optional_params:
+        if optional_params['reset_index'] == True:
+            df.reset_index(inplace=True, drop=True)
+    # Drop Columns
+    if 'drop' in optional_params:
+        df.drop(inplace=True, columns=optional_params['drop'])
+            
     return df
