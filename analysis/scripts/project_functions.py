@@ -57,16 +57,18 @@ def load_data(path, **optional_params):
         pd.read_csv(path)
         .dropna(axis=0)
         .sort_values(['age', 'charges'])
+        .assign(age_category = lambda x: pd.cut(x['age'],
+                                               bins = [17, 25, 40, 55, 65],
+                                               labels = ['17-25', '25-40', '40-55', '55-65']
+                                               ),
+               bmi_category = lambda x: pd.cut(x['bmi'],
+                                               bins = [10, 18.5, 25, 30, 40],
+                                               labels = ['Under Weight', 'Healthy', 'Over Weight', 'Obese']
+                                               )
+               )
     )
     
     # Add categories to our dataset
-    agerange = [17, 25, 40, 55, 65]
-    cat = ['17-25', '25-40', '40-55', '55-65']
-    df['age category'] = pd.cut(df.age, agerange, labels=cat, ordered=True)
-    
-    bmirange = [10, 18.5, 25, 30, 40]
-    bmicat = ['under', 'healthy', 'over', 'obese']
-    df['bmi category'] = pd.cut(df.bmi, bmirange, labels=bmicat, ordered=True)
 
     if ('only_smokers' in optional_params and 'no_smokers' in optional_params) or \
             ('is_male' in optional_params and 'is_female' in optional_params):
