@@ -53,6 +53,7 @@ def load_data(path, **optional_params):
         DataFrame loaded from path with optional filters
     '''
     # Note that the Data is already really clean so there isn't much we actually want to do in our chaining
+    
     df = (
         pd.read_csv(path)
         .dropna(axis=0)
@@ -60,6 +61,7 @@ def load_data(path, **optional_params):
     )
     
     # Add categories to our dataset
+    # 
     agerange = [17, 25, 40, 55, 65]
     cat = ['17-25', '25-40', '40-55', '55-65']
     df['age category'] = pd.cut(df.age, agerange, labels=cat, ordered=True)
@@ -67,6 +69,10 @@ def load_data(path, **optional_params):
     bmirange = [10, 18.5, 25, 30, 40]
     bmicat = ['under', 'healthy', 'over', 'obese']
     df['bmi category'] = pd.cut(df.bmi, bmirange, labels=bmicat, ordered=True)
+    
+    costrange = [0, 10000, 20000, 30000, 100000]
+    costcat = ['$0-$10,000', '$10,000-$20,000', '$20,000-$30,000', 'Over $30,000']
+    df['cost category'] = pd.cut(df.charges, costrange, labels=costcat, ordered=True)
 
     if ('only_smokers' in optional_params and 'no_smokers' in optional_params) or \
             ('is_male' in optional_params and 'is_female' in optional_params):
