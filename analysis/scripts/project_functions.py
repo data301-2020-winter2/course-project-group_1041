@@ -58,21 +58,6 @@ def load_data(path, **optional_params):
         pd.read_csv(path)
         .dropna(axis=0)
         .sort_values(['age', 'charges'])
-<<<<<<< HEAD
-        .assign(age_category = lambda x: pd.cut(x['age'],
-                                               bins = [17, 25, 40, 55, 65],
-                                               labels = ['17-25', '25-40', '40-55', '55-65']
-                                               ),
-               bmi_category = lambda x: pd.cut(x['bmi'],
-                                               bins = [10, 18.5, 25, 30, 40],
-                                               labels = ['Under Weight', 'Healthy', 'Over Weight', 'Obese']
-                                               )
-               )
-    )
-    
-    # Add categories to our dataset
-
-=======
         .assign(age_category=lambda x: pd.cut(x['age'],
                                               [17, 25, 40, 55, 65],
                                               labels=['17-25', '25-40', '40-55', '55-65']
@@ -88,8 +73,6 @@ def load_data(path, **optional_params):
                )                                       
     )
     
-    
->>>>>>> matthew_milestone2_working
     if ('only_smokers' in optional_params and 'no_smokers' in optional_params) or \
             ('is_male' in optional_params and 'is_female' in optional_params):
         raise Exception("Two optional params cannot be used in conjunction with one another\n"
