@@ -19,6 +19,10 @@ Medical Cost Personal dataset is publicly available. It is used in Brett Lanz’
 - **Matthew Currie:** I am a computer science major interested in data analysis. In my spare time, I watch too much youtube and read whatever library book I happen to have nearby.
 - **Jivraj Grewal:** I am a major in computer science and this is my frist time using data analyitics tools. 
 
+## Online Dashboard Link
+---
+- **Livia Jonnatan:** The final dashboard can be found [here] (https://us-west-2b.online.tableau.com/#/site/data301/workbooks/345791?:origin=card_share_link).
+
 ## References
 ---
 Choi, M. (2018, February 20). Medical Cost Personal Datasets, Insurance Forecasts by using Linear Regression. Kaggle. 
