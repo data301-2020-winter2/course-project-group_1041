@@ -21,7 +21,7 @@ Medical Cost Personal dataset is publicly available. It is used in Brett Lanz’
 
 ## Online Dashboard Link
 ---
-- **Livia Jonnatan:** The final dashboard can be found [here] (https://us-west-2b.online.tableau.com/#/site/data301/workbooks/345791?:origin=card_share_link).
+- **Livia Jonnatan:** The final dashboard can be found [here](https://us-west-2b.online.tableau.com/#/site/data301/workbooks/345791?:origin=card_share_link).
 
 ## References
 ---
