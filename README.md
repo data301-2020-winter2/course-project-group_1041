@@ -23,6 +23,10 @@ Medical Cost Personal dataset is publicly available. It is used in Brett Lanz’
 ---
 - **Livia Jonnatan:** The final dashboard can be found [here](https://us-west-2b.online.tableau.com/#/site/data301/workbooks/345791?:origin=card_share_link).
 
+## Final Presentation Video Link
+---
+The final project presentation video can be found [here](https://youtu.be/x00WzGtDfBI).
+
 ## References
 ---
 Choi, M. (2018, February 20). Medical Cost Personal Datasets, Insurance Forecasts by using Linear Regression. Kaggle. 
